@@ -2,8 +2,8 @@
 module.exports = function(app) {
 
 app.get('/aa', function(request, response) {
-	response.render('index.html');
-  //response.send('Hello World!')
+	//response.render('index.html');
+  response.send('Hello World!')
 })
 }
 

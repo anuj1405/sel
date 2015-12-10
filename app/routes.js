@@ -1,9 +1,10 @@
 // app/routes.js
 module.exports = function(app) {
 
-app.get('/aa', function(request, response) {
-  response.send('Hellosss World!')
-})
+app.get('/bb', function(req, res)
+ {	
+ 	res.render('homepage.html')
+});
 }
 
 // route middleware to make sure

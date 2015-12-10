@@ -5,9 +5,6 @@ app.set('port', (process.env.PORT || 5000))
 app.set('views', __dirname + '/views')
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function(request, response) {
-  response.send('Hello Worldsss!')
-})
 
 require('./app/routes.js')(app);
 

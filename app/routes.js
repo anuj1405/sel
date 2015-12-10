@@ -1,7 +1,10 @@
 // app/routes.js
 module.exports = function(app) {
-
-app.get('/bb', function(req, res) {
+app.get('/',function(req,res)
+{
+	res.send('heeeee');
+})
+app.get('/aa', function(req, res) {
 	res.render('homepage.html'); 
 });
 }

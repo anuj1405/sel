@@ -1807,7 +1807,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: #e89980;
 		text-decoration: none;
 	}
@@ -2529,6 +2529,20 @@
 	dl {
 		margin: 0 0 2em 0;
 	}
+	/*faq******************************************/
+	.panel-title span { float:left; padding-right:15px; margin-top:-5px;  }
+
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114"; 
+    float: left; font-size:14px; color:#fff !important; 
+    background:#e89980; padding:4px; margin-right:10px;
+    
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";   font-size:14px; color: #333 !important;  background:#fff;
+}
+
 
 /* Table */
 
@@ -2557,9 +2571,10 @@
 		}
 
 		table th {
-			color: #646464;
-			font-size: 0.9em;
-			font-weight: 300;
+			background-color: #e89980;
+			color: #fff;
+			
+			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
@@ -2800,7 +2815,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: #e89980;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -3101,15 +3116,33 @@
 				color: #666 !important;
 			}
 
-/* Main */
+/*=== Parallax ==========================================================*/
+
+.parallax										{	width:100%;   background-attachment:fixed; background-repeat: no-repeat; background-position: 50% 0; background-size:cover; 
+												}
+												
+.parallax-pattern								{	width:100%; height:300px; position:absolute; background-image:url(images/pattern.png);  
+												}
+												
+
+												
+
+.parallax1										{	background-image:url(images/y.jpg);
+												}
+												
+
+/* Main 
 
 	#main {
 		padding: 4em 0;
+	}*/
+	.contact{
+		background-image: url(images/y.jpg);
 	}
 
 		#main > header {
 			text-align: center;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
 		}
 
 			#main > header h2 {
@@ -3138,12 +3171,13 @@
 	
 	
 
-/* Footer */
+/* Footer 
 
 	#footer {
-		background: #f0f0f0;
+		background: #504F4F;
 		padding: 4em 0 6em 0;
 		text-align: center;
+		color:#fff;
 	}
 
 		#footer .icons a {
@@ -3183,7 +3217,137 @@
 					border-left: 0;
 					margin-left: 0;
 					padding-left: 0;
-				}
+				}*/
+
+				#footer {
+    background: #2c2c2c;
+    color: #919191;
+    font-size: 16px;
+    padding: 70px 0;
+    text-align: left;
+}
+
+
+.fa-rss-square:before{
+    content: "\f143";
+}
+
+#footer .circles li a span {
+    color: rgba(141,141,141,0.85);
+    display: inline-block;
+    font-size: 30px;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    border: 1px solid rgba(141,141,141,0.3);
+    line-height: 72px;
+    transition: all 0.2s ease;
+
+}
+
+.fa {
+    display: inline-block;
+    font: normal  14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+#footer ul li a {
+    color: #9fa73a;
+    text-decoration: none;
+    line-height: 18px;
+    font-size: 14px;
+}
+a {
+    color: #e89980;
+    text-decoration: none;
+}
+
+user agent stylesheeta:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+#footer ul li {
+    line-height: 18px;
+}
+user agent stylesheetli {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#footer .circles {
+    text-align: center;
+}
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul {
+    list-style-type: square;
+}
+user agent stylesheetul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+ div.col-xs-12.col-sm-6.text-center.footer-middle-column
+.text-center {
+
+
+    text-align: center;
+
+
+}
+div.col-xs-12.col-sm-6.text-center.footer-middle-column li{
+  display: inline-block;
+  
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 20px;
+    
+
+}
+div.col-xs-12.col-sm-3.footer-last-column{
+  text-align: right;
+    font-size: 14px;
+}
+
+
+
+
+/*footer#footer
+#footer {
+    background: #2c2c2c;
+    color: #919191;
+    font-size: 16px;
+  padding: 70px 0;
+    text-align: left;}*/
+
+.footer-download {text-align: center;
+padding-bottom: 25px;
+padding-top: 50px;
+}
 
 /* CTA */
 
@@ -3340,6 +3504,7 @@
 			header.major {
 				padding: 0 4em;
 			}
+
 
 		/* Box */
 
@@ -3738,6 +3903,8 @@
 					padding: 3em 0 0 0 !important;
 				}
 
+
+				
 				.box .image.featured {
 					border-radius: 0;
 					margin-left: -1em;
@@ -3801,8 +3968,138 @@
 
 		
 
-	/************************parallax*******************/
-#partnership{
-	background-color:;
+	/************************parallax******************/
+
+   #properitorship{
+   	text-align: justify;
+   	background-image: url(images/y.jpg);
+
+   }
+
+	#partnership{
+	
+	background-image: url(images/y.jpg);
+
+	}
+/* table********************************************/
+
+
+	@import "compass/css3";
+
+
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; // adjust to your needs
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; // for accessibility, use a visually hidden method 
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+      font-weight: bold;
+
+      // optional stuff to make it look nicer
+      width: 6.5em; // magic number :( adjust according to your own content
+      display: inline-block;
+      // end options
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
 }
 
+
+// presentational styling
+
+@import 'http://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #eee;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #dd5;
+  }
+}
+
+
+.table th {
+    background-color: b;
+    background-color: #e89980;
+    color: #646464;
+    font-size: 0.9em;
+    font-weight: 300;
+    padding: 0 0.75em 0.75em 0.75em;
+    text-align: left;
+}
+
+.table {
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}

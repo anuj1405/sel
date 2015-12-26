@@ -4,6 +4,8 @@ var app = express()
 var bodyParser = require('body-parser')
 var configDB = require('./config/database.js')
 
+
+
 mongoose.connect(configDB.url); // connect to our database
 app.set('port', (process.env.PORT || 5000))
 app.set('views', __dirname + '/views')

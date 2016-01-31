@@ -1,7 +1,7 @@
 {
-  "name": "node-js-sample",
-  "version": "0.2.0",
-  "description": "A sample Node.js app using Express 4",
+  "name": "Legalman",
+  "version": "1.0",
+  "description": "A Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -25,9 +25,9 @@
     "heroku",
     "express"
   ],
-  "author": "Mark Pundsack",
+  "author": "Anuj Agarwal",
   "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+    "Anuj <a.anuj1405@gmail.com> "
   ],
   "license": "MIT"
 }

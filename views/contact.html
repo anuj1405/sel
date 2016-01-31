@@ -2,12 +2,8 @@
 
 <html>
 	<head>
-		<title>LEGALMAN</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<title>contact</title>
+		<% include ./links.html %>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -18,30 +14,31 @@
 				</header>
 
 			<!-- Main -->
-			<div class="contact">
+			<div class="contact-us" style=" background-image: url(images/russ.jpg);background-repeat: no-repeat;background-size: cover;">
 				<section id="main" class="container 75%">
-					<header>
-						<h2 style="color:#fff;">Contact Us</h2>
-						<p style="color:#fff;">Tell us what you think about our little operation.</p>
-					</header>
-					<div class="box">
+					
+					<div class="box" style="background:rgba(19, 18, 18, 0.81);">
 						<form method="post" action="#">
 							<div class="row uniform 50%">
+							<header>
+						<h2 style="color:#fff;     padding-left: 49px;">Contact Us</h2>
+						<p style="color:#fff; padding-left:129px;">Tell us what you think about our little operation.</p>
+					</header>
 								<div class="6u 12u(mobilep)">
-									<input type="text" name="name" id="name" value="" placeholder="Name" />
+									<input type="text" name="name" id="name" value="" placeholder="Name" /   style="background: rgba(255, 255, 255, 0.31); color: #000;">
 								</div>
 								<div class="6u 12u(mobilep)">
-									<input type="email" name="email" id="email" value="" placeholder="Email" />
+									<input type="email" name="email" id="email" value="" placeholder="Email" /   style="background: rgba(255, 255, 255, 0.31); color: #000;">
 								</div>
 							</div>
 							<div class="row uniform 50%">
 								<div class="12u">
-									<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+									<input type="text" name="subject" id="subject" value="" placeholder="Subject" /   style="background: rgba(255, 255, 255, 0.31); color: #000;">
 								</div>
 							</div>
 							<div class="row uniform 50%">
 								<div class="12u">
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"  style="background: rgba(255, 255, 255, 0.31); color: #000;"></textarea>
 								</div>
 							</div>
 							<div class="row uniform">
@@ -55,27 +52,13 @@
 					</div>
 				</section>
 
-			<!-- Footer
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>---------------------------------------------------------->
 				
-		<footer id="footer" class="footer">
+			<!-- Footer -->
+				<footer id="footer" class="footer">
 				<% include ./footer.html %>
-		
-		</footer>
+				</footer>
 
-		</div>
+				</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

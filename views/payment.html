@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+
+
+<html>
+	<head>
+		<title>payment</title>
+		<% include ./links.html %>
+	</head> 
+	<body>
+		
+
+			<!-- Header -->
+				<header id="header">
+					<% include ./header.html %>
+				</header>
+				
+				
+				
+				
+				<!--- question------------------->
+				
+				<div class="container" style="margin-top:100px;">
+				<div class="row">
+				<div class="col-sm-9">
+				<div class="boxque">
+				<h3> Please take a couple of minutes to answer the below questions </h3>
+				<p>These questions will help us make the process faster</p>
+				<div class="ques1">
+				<p>Question 1. What will be the nature of your business?</br>
+				<div class="row">
+				<div class="co-sm-4">
+				<input type="checkbox" id="sales" name="sales">
+				<label for="sales">Sales</label>
+				</div>
+				<div class="co-sm-4">
+				<input type="checkbox" id="service" name="service">
+				<label for="service">Providing Services</label>
+				</div>
+				<div class="co-sm-4">
+				<input type="checkbox" id="consultancy" name="consultancy" checked>
+				<label for="consultancy">Consultancy</label>
+				</div>
+				<div class="co-sm-4">
+				<input type="checkbox" id="ecom" name="ecom">
+				<label for="ecom">E-Commerce</label>
+				</div>
+				</div>
+				<div class="row" style="padding-top:20px;">
+				<div class="col-sm-4">
+				<input type="checkbox" id="software" name="software">
+				<label for="software">Software Services</label>
+				</div>
+				<div class="col-sm-2" style="padding-left: 49px;">
+				<label for="Others">Others</label>
+				</div>
+				<div class="col-sm-6" style="padding-right: 39px;">
+				<input type="text" id="others" name="others" placeholder="Please Specify">
+				</div>
+				</div>
+				</div>
+				
+				<div class="ques1">
+				<p>Question2 . What is the current status of your business?</br>
+				<div class="row">
+				<div class="co-sm-3">
+				<input type="checkbox" id="No" name="No">
+				<label for="No">No Activities Yet</label>
+				</div>
+				<div class="co-sm-3">
+				<input type="checkbox" id="Basic" name="Basic" checked>
+				<label for="Basic">Basic Setup Activities</label>
+				</div>
+				<div class="co-sm-3">
+				<input type="checkbox" id="Partly" name="Partly" >
+				<label for="Partly">Partly Operational</label>
+				</div>
+				<div class="co-sm-3" style="padding:20px;">
+				<input type="checkbox" id="Fully" name="Fully" style="padding-right: 39px;">
+				<label for="Fully">Fully Operational</label>
+				</div>
+				</div>
+				</div>
+				
+				<div class="ques1">
+				<p>Question3 . How many director will be there in the company?</br>
+				<div class="row">
+				<div class="col-sm-8">
+				<input type="text" id="answer" name="answer" placeholder="Input Here">
+				</div>
+				<div class="col-sm-4">
+				&nbsp;
+				</div>
+				</div>
+				</div>
+				
+				<div class="ques1">
+				<p>Question4 .How much capital will you be investing in the company?</br>
+				<div class="row">
+				<div class="col-sm-8">
+				<input type="text" id="answer" name="answer" placeholder="Input Here">
+				Capital more than Rs 100,000 will attract high stamp duty
+
+				</div>
+				<div class="col-sm-4">
+				&nbsp;
+				</div>
+				</div>
+				</div>
+				<div style="margin-bottom: 2em;">
+				<input type="submit" value="Let's Start">
+				</div>
+				</div>
+				</div>
+				<div class="col-sm-3" style="margin-top:7em;">
+				<ul><li style="list-style:none;"><a href="#" class="button fit"  data-toggle="modal" data-target="#myModal"> Checkout</a></li></ul>
+				</div>
+				
+				</div>
+				
+				</div>
+				<!--</div>
+				</div>-->
+				<!---footer------>
+				
+				<footer id="footer" class="footer">
+				 
+			<% include ./footer.html %>
+				</footer>
+				
+<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+				
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+				
+<!-- Modal----------------------------------------------------------------------------------------- -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" style="color:#fff;">&times;</button>
+        <h3 class="modal-title" style="color:#fff;">
+		Checkout
+		</h3>
+      </div>
+      <div class="modal-body">
+	  		<div class="cd-form">
+		
+		<div class="cd-plan-info">
+			<!-- content will be loaded using jQuery - according to the selected plan -->
+		</div>
+
+		<div class="modal-set">
+		<form action="">
+			<fieldset>
+				<h3 style="text-align:left;"><b>Account Information</b></h3>
+				<div class="row">
+				<div class="col-sm-6">
+					<label for="userName">Name</label>
+					<input type="text" id="userName" name="userName">
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="userEmail">Email</label>
+					<input type="email" id="userEmail" name="userEmail">
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-sm-6">
+					<label for="userPassword">Business Address</label>
+					<input type="password" id="userPassword" name="userPassword">
+				</div>
+				
+				<div class="col-sm-6">
+					<label for="userBusinessAddress">Pin Code</label>
+					<input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+				</div>
+				</div>
+				
+				<div class="row">
+				<div class="col-sm-6">
+					<label for="userCity">City</label><br>
+					<select name="City" id="category">
+									
+	 					<option value="1">DELHI</option>
+							<option value="1">MUMBAI</option>
+							<option value="1">AHEMDABAD</option>
+							
+					</select>
+				</div>
+				
+				
+				
+				<div class="col-sm-6">
+				<label for="service">SERVICES</label> <br>
+				<select name="category" id="category">
+									
+					<option value="1">New Business Registration</option>
+					<option value="1">Proprietorship</option>
+					<option value="1">Partnership</option>
+					   <option value="1">One Person Company</option>
+						<option value="1">Limited Liability Partnership</option>
+						<option value="1">Private Limited Company</option>
+						<option value="1">Public Limited Company</option>
+					</select>
+					</div>		
+                    </div>
+			</fieldset>
+				<hr>
+			<fieldset>
+				<h3 style="text-align:left;"><b>Payment Method</b></h3>
+				
+				<div class="new-box">
+				<div class="row">
+				<div class="col-sm-6">
+					<ul class="cd-payment-gateways" >
+						<li style="list-style:none;">
+							<input type="radio" name="payment-method" id="paypal" value="paypal">
+							<label for="paypal">Payment After Registration</label>
+						</li>
+						</ul>
+						</div>
+						<div class="col-sm-6">
+						<ul class="cd-payment-gateways" >
+						<li style="list-style:none;">
+							<input type="radio" name="payment-method" id="card" value="card" checked>
+							<label for="card"> Payment Online</label>
+						</li>
+						
+					</ul> <!-- .cd-payment-gateways -->
+					</div>
+				</div>
+		<div class="cd-credit-card">
+					<div class="row">
+						<div class="col-sm-6">
+							<label for="cardNumber">Card Number</label>
+							<input type="text" id="cardNumber" name="cardNumber">
+						</div>
+						<div class="half-width">
+							<label for="cardCvc">Card CVC</label>
+							<input type="text" id="cardCvc" name="cardCvc">
+						</div>
+						
+						<div class="row">
+						<div class="col-sm-12">
+						<label for=">Expirationdate">Expiration date</label>
+						
+						</div>
+						<div  class="col-sm-6">
+						
+							<select name="card-expiry-month" id="card-expiry-month">
+										<option value="1">january</option>
+										<option value="1">February</option>
+										<option value="1">March</option>
+										<option value="1">April</option>
+										<option value="1">May</option>
+										<option value="1">June</option>
+										<option value="1">July</option>
+										<option value="1">August</option>
+										<option value="1">September</option>
+										<option value="1">October</option>
+										<option value="1">November</option>
+										<option value="1">December</option>
+										
+									</select>
+								</div>
+								
+								<div  class="col-sm-6">
+								
+								<select name="card-expiry-year" id="card-expiry-year">
+										<option value="2015">2015</option>
+										<option value="2015">2016</option>
+										<option value="2015">2017</option>
+										<option value="2015">2018</option>
+										<option value="2015">2019</option>
+										<option value="2015">2020</option>
+										<option value="2015">2021</option>
+										<option value="2015">2022</option>
+										<option value="2015">2023</option>
+										<option value="2015">2024</option>
+										<option value="2015">2025</option>
+									</select>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .cd-credit-card -->
+				</div>
+				
+			</fieldset>
+			 <div class="modal-footer">
+			<fieldset>
+				<div>
+					<input type="submit" value="Get started">
+					<!--<input type="submit" value="cancel" style="background-color:#fff; color:#000; border-color:1px solid #e5e5e5;">-->
+				</fieldset>
+			</div>
+		</form>
+		</div>
+		<a href="#0" class="cd-close"></a>
+	</div> <!-- .cd-form -->
+     </div>
+      
+    </div>
+
+  </div>
+</div>
+</div>				
+				
+				
+				
+</body>
+</html>
+				

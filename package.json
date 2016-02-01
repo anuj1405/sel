@@ -1,6 +1,5 @@
 {
   "name": "Legalman",
-  "version": "1.0",
   "description": "A Node.js app using Express 4",
   "main": "index.js",
   "scripts": {

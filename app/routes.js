@@ -1,13 +1,13 @@
 // app/routes.js
 module.exports = function(app) {
-var nodemailer = require('nodemailer')
-var transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: 'team@legalman.in',
-        pass: 'legalman*123'
-    }
-});
+// var nodemailer = require('nodemailer')
+// var transporter = nodemailer.createTransport({
+//     service: 'Gmail',
+//     auth: {
+//         user: 'team@legalman.in',
+//         pass: 'legalman*123'
+//     }
+// });
 var crypto = require('crypto');
 
 

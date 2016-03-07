@@ -3,21 +3,38 @@
 <html lang="en">
 	<head>
 		<title>LegalMan</title>
-		<% include ./links.html %>
-							</head>
+		<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				
+        <meta name="description" content="mona malik">
+        <meta name="keywords" content="" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header" class="alt">
-						<% include ./header.html %>
+					<% include ./header.html %>
 				</header>
 			<!-- Banner -->
 				<section id="banner">
-					<h3>LEGAL MAN</h3>
-					<h4>Starting A Business Made Simple</h4>
+					<h2>LEGAL  MAN</h2>
+					<h3 style="color:#fff; font-size: 1.25em;">Starting A Business Made Simple</h3>
 
-					<p>We strive to provide most Trustworthy And Affordable services for all Small and Medium size business.</p>
+					<p>We strive to provide most TRUSTWORTHY & AFFORDABLE services for all SMALL & MEDIUM size business.</p>
 					<ul class="actions">
 						
 						<li><a href="#our-service" class="button" style="background: rgba(169, 169, 169, 0.02);">SERVICES</a></li>
@@ -46,24 +63,28 @@
 						
 						<div id="our-service">
 						<h2> OUR SERVICES</h2>
+					  <h4>What we Provide</h4>
 					  <br>
 						<div class="row">
 						<div class="col-sm-4 ">
 								<span class="icon major fa-bolt accent2"></span>
 								<h4>Registration for New & Existing Business</h4>
-								<button class="btn btn-default btn-lg">Let's Start</button>
+							
+								<button class="btn btn-default btn-lg"> <a href="partnership.html" target="_blank">Let's Start</a></button>
 						</div>	
 						<div class="col-sm-4">
 							<span class="icon major fa-area-chart accent3"></span>
 								<h4>Free Advice From Chattered Accountant</h4>
-								 <button class="btn btn-default btn-lg">Ask Now</button>
+							
+								 <button class="btn btn-default btn-lg"> <a href="ask.html" target="_blank">Ask Now</a></button>
 						</div>
 								
 						<div class="col-sm-4">
 							<span class="icon major fa-cloud accent4"></span>
 								<h4>Legal Documents</h4>
 								<div> &nbsp </div>
-								<button class="btn btn-default btn-lg">Get Started</button>
+		
+								<button class="btn btn-default btn-lg"> <a href="legal.html" target="_blank">Get Started</a></button>
 							</div>	
 							
 							</div>
@@ -72,23 +93,22 @@
 					   
 						</section>
 						
-						<!--registring --> 
 							
 				  <section id="registring">
 				  <div class="container-fluid">
-				  <h2> Registering your Business</h2>
+				  <h2> Registring your Business</h2>
 						<div class="row">  
 						
 					<div class="col-sm-8">
 					  
 					  <p><b>FILLING YOUR COMPANY</b><br>
-					  
-					  WE check your business name and file and your paperwork.our specialist can walk you through the entire process.</p>
+					 WE check your business name and file and your paperwork.our specialist can walk you through the entire process.</p>
 					  <p><b>STAY AT LEGITAMATE COMPANY</b><br>
-					  We offers a Registered Agent service so dont miss important legal notices or tax date.
+					  We offers a Registered Agent service so dont miss important legal notices or tax date. 
 					  Also,get all the corporate compliance documents you needs.</p>
-					  <p><b>WE SUPPORT START-UPS 24*7</b><br>
-					  We believe in promoting entreprenurships by making sure you concentrate soley on your business
+					  <p>
+					  <b>WE SUPPORT START-UPS 24*7</b><br>
+					  We believe in promoting entreprenurships by making sure you concentrate soley on your  business
 					  and we provide all the neccessary ingedients to start and run your business
 					  ventures in the best possible manner.</p>
 					  </div>
@@ -96,81 +116,57 @@
 						  <img src="images/hh.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
 						  </div>
 						</div>
-					  
+					  <form action="/start_business" method="post" > 
 					  <div class="row">
 					  <div class="col-sm-4">
+
 					   <div class="select-wrapper">
-													<select name="category" id="category">
-														<option value="">- SELECT YOUR STATE-</option>
-														<option value="1">DELHI</option>
-														<option value="1">MUMBAI</option>
-														<option value="1">AHEMDABAD</option>
-														<option value="1">PUNE</option>
-														
-														
-													</select>
-												</div>
-				
-												</div>
-					  
-													<div class="col-sm-4">
-													<div class="select-wrapper">
-													<select name="category" id="category">
-														<option value="">- SERVICES-</option>
-														
-														<option value="1">Proprietorship</option>
-														<option value="1">Partnership</option>
-														<option value="1">One Person Company</option>
-														<option value="1">Limited Liability Partnership</option>
-														<option value="1">Private Limited Company</option>
-														<option value="1">Public Limited Company</option>
-														
-													</select>
-												</div>
-												  </div>
+
+						<select name="place" id="place" required>
+							<option >- SELECT YOUR CITY-</option>
+							<option value="new_delhi">NEW DELHI</option>
+							<option value="mumbai">MUMBAI</option>
+							<option value="ahmedabad">AHEMDABAD</option>
+							<option value="pune">PUNE</option>
+							<option value="gurgaon">GURGAON</option>
+							<option value="noida">NOIDA</option>
+							<option value="kolkata">KOLKATA</option>
+							
+						</select>
+					</div>
+
+					</div>
+				  
+				<div class="col-sm-4">
+				<div class="select-wrapper">
+						<select name="category" id="category" required>
+							<option value="">- SERVICES-</option>
+							
+							<option value="proprietorship">Proprietorship</option>
+							<option value="partnership">Partnership</option>
+							<option value="opc">One Person Company</option>
+							<option value="llp">Limited Liability Partnership</option>
+							<option value="plc">Private Limited Company</option>
+							
+						</select>
+						</div>
+						  </div>
 												<div class="col-sm-4">
-												<button class="btn btn-default btn-lg">Get in Touch</button></div>
+										
+												<input class="btn btn-default btn-lg" type="submit"></input>
 												</div>
+												</div>
+												</form>
 								
 											 </div>
 											</section>
 											
 											
 											</section>
-
-
+				
+					
 					<div class="container">
-					<h2 text-align="center"> We Are Always Here To Help</h2>
-					<div class="row">
-						<div class="4u 12u(narrower)">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/tes1.jpg"  alt="Random Name" width="255" height="255" /></span>
-								<h3 style="margin:none;">NAME</h3>
-								<p> Certified CA</p>
-							</section>
-							</div>
-						<div class="4u 12u(narrower)">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/tes2.jpg" alt="Random Name" width="255" height="255" /></span>
-								<h3 style="margin:none;">NAME</h3>
-								<p> Certified CA</p>
-							</section>
-							</div>
-						
-						<div class="4u 12u(narrower)">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/tes3.jpg"  alt="Random Name" width="255" height="255"/></span>
-								<h3 style="margin:none;">NAME</h3>
-								<p> Certified CA</p>
-							</section>
-
-						</div>
-						
-					</div>
-
+					
 						<!--service-->
 									
 								
@@ -179,7 +175,7 @@
 					  <section id="legal">
 				  <div class="container-fluid">
 				  <h2> Do It Yourself Legal Documents You Can Trust</h2>
-						
+						<p>we provide numerous legal documents prepared by expert lawyer of the country</p>
 						<div class="row">  
 						
 					<div class="col-sm-4">
@@ -204,7 +200,8 @@
 				by our in-house lawyers.</p><br>
 				&nbsp &nbsp &nbsp
 				&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-				<button class="btn btn-default btn-lg">Get in Touch</button></div>
+			
+				<button class="btn btn-default btn-lg"> <a href="legal.html" target="_blank">Get in Touch</a></button></div>
 				</div>
 				</div>
 				</div>
@@ -213,22 +210,20 @@
 				</section>
 					
 					</section>
-						
-				<!----------------------------ask our ca------------------------->	
-					
+			
 					
 				</section>
 
-			<!-- subscribe -->
+		
 				<section id="cta">
 
 					<h2> Subscribe</h2>
 					<p>To know more  about our services. keep in touch with us </p>
 
-					<form>
+					<form action="subscription" method="post">
 						<div class="row uniform 50%">
 							<div class="8u 12u(mobilep)">
-								<input type="email" name="email" id="email" placeholder="Email Address" />
+								<input type="email" name="email" id="email" required placeholder="Email Address" />
 							</div>
 							<div class="4u 12u(mobilep)">
 								<input type="submit" value="Sign Up" class="fit" />
@@ -239,12 +234,11 @@
 				</section>
 				
 		
-				
-
-			<!---footer------>
-				
+			
 				<footer id="footer" class="footer">
-				 <% include ./footer.html %>
+				 
+					<% include ./footer.html %>
+
 				</footer>
 
 		</div>

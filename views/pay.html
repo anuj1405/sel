@@ -1,0 +1,20 @@
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+ <html>
+     <head>
+         <meta HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+    </head>
+    <body>
+        <form align="center" method="post" action="https://sandbox.citruspay.com/legalman">
+        <input type="hidden" id="merchantTxnId" name="merchantTxnId" value="<%=msg1%>" />
+        <input type="hidden" id="orderAmount" name="orderAmount" value="<%=price%>" />
+        <input type="hidden" id="currency" name="currency" value="INR" />
+        <input type="hidden" name="returnUrl" value="www.amba.herokuapp.com" />
+        <input type="hidden" id="notifyUrl" name="notifyUrl" value="www.amba.herokuapp.com" />
+        <input type="hidden" id="secSignature" name="secSignature" value="<%=msg%>" />
+       
+        
+        <input type="Submit" value="Pay Now"/>
+    </form>
+    </body>
+</html>

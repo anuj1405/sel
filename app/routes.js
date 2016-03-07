@@ -9,7 +9,7 @@ var transporter = nodemailer.createTransport({
     }
 });
 var crypto = require('crypto');
-var randomString = require('random-string');
+
 
     
         //Need to replace the last part of URL("your-vanityUrlPart") with your Testing/Live URL

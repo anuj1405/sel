@@ -8,7 +8,7 @@ module.exports = function(app) {
 //         pass: 'legalman*123'
 //     }
 // });
-var crypto = require('crypto');
+// var crypto = require('crypto');
 
 
     
@@ -63,37 +63,37 @@ var crypto = require('crypto');
 
 
 //payment
-app.post('/pay',function(req,res){
+// app.post('/pay',function(req,res){
 
-	var d = new Date();
-	var n = d.getTime();
+// 	var d = new Date();
+// 	var n = d.getTime();
 	
-	var formPostUrl = "https://sandbox.citruspay.com/legalman";
-        //Need to change with your Secret Key
-        var secret_key = "c508f973e20f0d96dc0728f9866071abed085248";
-        //Need to change with your Vanity URL Key from the citrus panel
-        var vanityUrl = "legalman"; 
-        //Should be unique for every transaction
-        var merchantTxnId = n;
-        //Need to change with your Order Amount
-        var orderAmount = req.body.price;
-        var currency = "INR";
-        //Need to change with your Return URL
-        var returnURL = "www.amba.herokuapp.com";
-        var data = vanityUrl + orderAmount + merchantTxnId + currency;
+// 	var formPostUrl = "https://sandbox.citruspay.com/legalman";
+//         //Need to change with your Secret Key
+//         var secret_key = "c508f973e20f0d96dc0728f9866071abed085248";
+//         //Need to change with your Vanity URL Key from the citrus panel
+//         var vanityUrl = "legalman"; 
+//         //Should be unique for every transaction
+//         var merchantTxnId = n;
+//         //Need to change with your Order Amount
+//         var orderAmount = req.body.price;
+//         var currency = "INR";
+//         //Need to change with your Return URL
+//         var returnURL = "www.amba.herokuapp.com";
+//         var data = vanityUrl + orderAmount + merchantTxnId + currency;
        
-        //Need to change with your Notify URL
-        var notifyUrl = "www.amba.herokuapp.com";
-        // generate hmac
-        var hmac = crypto.createHmac('sha1', secret_key);
-        hmac.update(data);
-        var securitySignature = hmac.digest('hex');
+//         //Need to change with your Notify URL
+//         var notifyUrl = "www.amba.herokuapp.com";
+//         // generate hmac
+//         var hmac = crypto.createHmac('sha1', secret_key);
+//         hmac.update(data);
+//         var securitySignature = hmac.digest('hex');
 
-        // For Coupon signature
+//         // For Coupon signature
       	
-       console.log(securitySignature);
-	res.render('pay.html',{msg : securitySignature,msg1:n,price:orderAmount})
-})
+//        console.log(securitySignature);
+// 	res.render('pay.html',{msg : securitySignature,msg1:n,price:orderAmount})
+// })
 
 
 

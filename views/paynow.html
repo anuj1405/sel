@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>cart</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<% include ./header.html %>
+				</header>
+				<section style="background:#fff;">
+				<div class="container ">
+				<div class="thanks-bottom  gapt60">
+				<h2> Thank You! </h2>
+				<h5> for choosing LegalMan </h5>
+				</div>
+                
+				<div class="row">
+				<div class="4u 12u(narrower)">
+				&nbsp;
+				</div>
+				
+				<div class="4u 12u(narrower)">
+				<img src="images/money.jpg">
+				</div>
+				<div class="4u 12u(narrower)">
+				&nbsp;
+				</div>
+				</div>
+				
+				<div class="row">
+				<div class="4u 12u(narrower)">
+				&nbsp;
+				</div>
+				<div class="4u 12u(narrower)">
+				<div class="thanks-bottom2">
+				<h3> we have just sent you an email a letter with complete
+				information about registration. </h3>
+				</div>
+				</div>
+				<div class="4u 12u(narrower)">
+				&nbsp;
+				</div>
+				</div>
+				
+				<div class="row gapb60">  
+				<div class="3u 6u$(narrower) 12u$(mobilep)">
+				&nbsp;
+				</div>
+				 <form align="center" method="post" action="https://sandbox.citruspay.com/legalman">
+		        <input type="hidden" id="merchantTxnId" name="merchantTxnId" value="<%=msg1%>" />
+		        <input type="hidden" id="orderAmount" name="orderAmount" value="<%=price%>" />
+		        <input type="hidden" id="currency" name="currency" value="INR" />
+		        <input type="hidden" name="returnUrl" value="www.amba.herokuapp.com" />
+		        <input type="hidden" id="notifyUrl" name="notifyUrl" value="www.amba.herokuapp.com" />
+		        <input type="hidden" id="secSignature" name="secSignature" value="<%=msg%>" />
+	 	
+				<div class="3u 6u$(narrower) 12u$(mobilep)">
+				<ul class="actions vertical">
+				<li><input type='submit' value='Pay Now'></li>
+				</ul>
+				</div>
+				 </form>
+				 <form action="/success" method="post">
+				<div class="3u 6u$(narrower) 12u$(mobilep)">
+				<ul class="actions">
+				<li><input type='submit' value='Pay After Registration'></li>
+				</ul>
+				</div>
+				</form>
+				<div class="3u 6u$(narrower) 12u$(mobilep)"> 
+				&nbsp;
+				</div>
+				</div>
+				
+				</div>
+				<section>
+				
+					<!-- Footer -->
+				<footer id="footer" class="footer">
+				 
+				<% include ./footer.html %>
+				</footer>
+				

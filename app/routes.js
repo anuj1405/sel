@@ -92,7 +92,9 @@ app.post('/pay',function(req,res){
         // For Coupon signature
       	
        console.log(securitySignature);
-	res.render('pay.html',{msg : securitySignature,msg1:n,price:orderAmount})
+
+       console.log("price is",req.body);
+	res.render('paynow.html',{msg : securitySignature,msg1:n,price:orderAmount})
 })
 
 
@@ -110,14 +112,25 @@ app.post('/info', function(req, res) {
 	// var par = req.body.category;
 	// var place = req.body.place;
 	var price = req.body.price;
+	console.log(price);
 	if(price)
-	res.render('payment.html',{price:price});
+		res.render('payment.html',{price:price});
 	else
-	res.render('home.html');  
+		res.render('cart.html');  
 });
 
-
-
+app.get('/info',function(req,res)
+{
+	var price = req.body.price;
+	if(price)
+		res.render('payment.html',{price:price});
+	else
+		res.render('cart.html'); 
+})
+app.post('/success',function(req,res)
+{
+	res.render('Thank.html');
+})
 
 app.get('/', function(req, res) {
 	res.render('home.html'); 

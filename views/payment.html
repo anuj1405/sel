@@ -24,67 +24,14 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1><a href="index.html">LEGALMAN</a></h1>
-					<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-					<li>
-						<a href="#" class="icon fa-angle-down">Services</a>
-					<ul>
-							<li><a href="#">New Business Registration</a><ul>
-							<li><a href="properitorship.html"> Proprietorship</a></li>					
-							<li><a href="partnership.html"> Partnership</a></li>
-							<li><a href="opc.html">One Person Company </a></li>
-							<li><a href="llp.html">Limited Liability Partnership</a></li>
-							<li><a href="plc.html">Private Limited Company</a></li>
-							
-					</ul>
-					</li>
-							<li><a href ="#">Business License</a><ul>
-							<li><a href="#">Import Export Business Code
-					</a>
-					</li>
-					</ul>
-					</li>
-						<li><a href="#">Type Of Registration</a>
-				    <ul>
-						<li>
-						<a href="#"> Shop & Establishment Act</a></li>
-						<li>
-						<a href="#"> Employee Provident Fund</a></li>
-						<li>
-						<a href="str.html">Service Tax </a></li>
-										
-						<li>
-      					<a href="vat.html">VAT-TIN </a></li>
-						<li>
-						<a href="#">  Employee State Insurance Act</a></li>
-						<li>
-						<a href="#">TAN </a></li>
-						<li>
-						<a href="#">MSME </a></li>					
-												
-					</ul>
-					</li>
-
-					</ul>
-					</li>					
-						<li>
-						<li><a href="#ask">Ask Our CA</a></li>
-						
-						<!--<li><a href="#">Knowledge Portal</a></li>-->
-						<li><a href="contact.html">Contact Us </a></li>
-						<li><a href="pay.html"><i class="fa fa-shopping-cart fa-lg"></i></a></li>
-					</ul>
-						
-					</nav>
+					<% include ./header.html %>
 				</header>
 				
 				
 				
-				
+
 				<form name="myform" action="/pay" method="post" >
-				
+				<input type="hidden" id="price" name="price" value="<%=price%>" >
 				<div class="container" style="margin-top:100px;">
 				<div class="row">
 				<div class="col-sm-9">
@@ -232,25 +179,7 @@
 				
 				<footer id="footer" class="footer">
 				 
-				<div class="container" >
-
-
-               <ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li><a href="#" ><span class="label" style="font-size:149%; font-weight:0;">Home</span></a></li>
-						<li><a href="#" ><span class="label" style="font-size:149%; font-weight:0;">About Us</span></a></li>
-						<li><a href="#" ><span class="label" style="font-size:149%; font-weight:0;">contact us</span></a></li>
-						<li><a href="#" ><span class="label" style="font-size:149%; font-weight:0;">Blog</span></a></li>
-					</ul>  
-					
-					<ul class="copyright">
-						<li>&copy;  All rights reserved.</li>
-						<li>Design: <a href="http://'www.legalman.com">Mona Malik</a></li>
-					</ul>
+					<% include ./footer.html %>
 				</footer>
 				
 <script src="assets/js/jquery.min.js"></script>

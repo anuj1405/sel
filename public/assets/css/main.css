@@ -1571,6 +1571,25 @@
 		}
 
 	}
+	.gapb60 { padding-bottom:80px;}
+
+	.gapt60 { padding-top:80px;}
+	.thanks{
+		padding-left: 43%;
+	}
+	.thanks-bottom{
+		text-align: center;
+	}
+	.thanks2{
+		    padding-left: 29%;  
+	}
+
+	.thanks-bottom2{
+		padding-top: 20px;
+		
+	    font-size: 12px;
+		text-align: center;
+	}
 
 	@media screen and (max-width: 480px) {
 

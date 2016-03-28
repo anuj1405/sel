@@ -12,178 +12,40 @@ var crypto = require('crypto');
 
 
     
-        //Need to replace the last part of URL("your-vanityUrlPart") with your Testing/Live URL
-        
-
-
-//Q9IQHL3SMGZQX6Y1GIGE     91afa5663d99e286eb82d6029e259b9cf5d70270
-
-// function generateSignature() {
-//         //Need to replace the last part of URL("your-vanityUrlPart") with your Testing/Live URL
-//         var formPostUrl = "https://citruspay.com/sslperf/4pg60pgkby";
-//         //Need to change with your Secret Key
-//         var secret_key = "91afa5663d99e286eb82d6029e259b9cf5d70270";
-
-//         //Need to change with your Vanity URL Key from the citrus panel
-//         var vanityUrl = "4pg60pgkby"; 
-//         //Should be unique for every transaction
-//         var merchantTxnId = '123456';//randomString({ length: 20 });
-//         //Need to change with your Order Amount
-//         var orderAmount = "1.00";
-//         var currency = "INR";
-       
-
-//         // generate hmac
-
-//         var data ='currency=' + currency + 'formPostUrl=' + formPostUrl + 'vanityUrl=' + vanityUrl + '&merchantTxnId=' + merchantTxnId + '&orderAmount=' + orderAmount;
-//         var hmac = crypto.createHmac('sha1', secret_key);
-//         hmac.update(data);
-//         return hmac.digest('hex');
-//     }
-
-// function generateSignature(merchantTxnId, request) {
-//         //Need to change with your Secret Key
-//         var secret_key = "91afa5663d99e286eb82d6029e259b9cf5d70270"; 
-
-//         //Need to change with your Access Key
-//         var accesskey = "Q9IQHL3SMGZQX6Y1GIGE"; 
-
-//         //Should be unique for every transaction
-//         var txn_id = '123456'; 
-
-//         //Need to change with your Order Amount
-//         var amount = "1.00";
-//         var data = 'merchantAccessKey=' + accesskey + '&transactionId=' + txn_id + '&amount=' + amount;
-
-//         // generate hmac
-//         var hmac = crypto.createHmac('sha1', secret_key);
-//         hmac.update(data);
-//         return hmac.digest('hex');
-//     }
-
-
-//payment
-app.post('/pay',function(req,res){
-
-	var d = new Date();
-	var n = d.getTime();
-	
-	var formPostUrl = "https://sandbox.citruspay.com/legalman";
-        //Need to change with your Secret Key
-        var secret_key = "c508f973e20f0d96dc0728f9866071abed085248";
-        //Need to change with your Vanity URL Key from the citrus panel
-        var vanityUrl = "legalman"; 
-        //Should be unique for every transaction
-        var merchantTxnId = n;
-        //Need to change with your Order Amount
-        var orderAmount = req.body.price;
-        var currency = "INR";
-        //Need to change with your Return URL
-        var returnURL = "www.amba.herokuapp.com";
-        var data = vanityUrl + orderAmount + merchantTxnId + currency;
-       
-        //Need to change with your Notify URL
-        var notifyUrl = "www.amba.herokuapp.com";
-        // generate hmac
-        var hmac = crypto.createHmac('sha1', secret_key);
-        hmac.update(data);
-        var securitySignature = hmac.digest('hex');
-
-        // For Coupon signature
-      	
-       console.log(securitySignature);
-
-       console.log("price is",req.body);
-	res.render('paynow.html',{msg : securitySignature,msg1:n,price:orderAmount})
-})
-
-
-
-var Subscribe  = require('../app/models/Subscribe');
-
-app.post('/start_business', function(req, res) {
-	var par = req.body.category;
-	var place = req.body.place;
-
-	res.render(par+'.html',{place:place}); 
-});
-
-app.post('/info', function(req, res) {
-	// var par = req.body.category;
-	// var place = req.body.place;
-	var price = req.body.price;
-	console.log(price);
-	if(price)
-		res.render('payment.html',{price:price});
-	else
-		res.render('cart.html');  
-});
-
-app.get('/info',function(req,res)
-{
-	var price = req.body.price;
-	if(price)
-		res.render('payment.html',{price:price});
-	else
-		res.render('cart.html'); 
-})
-app.post('/success',function(req,res)
-{
-	res.render('Thank.html');
-})
 
 app.get('/', function(req, res) {
-	res.render('home.html'); 
+	res.render('Home.html'); 
+});
+app.get('/gallery', function(req, res) {
+	res.render('gallery.html'); 
 });
 app.get('/contact', function(req, res) {
 	res.render('contact.html'); 
 });
-app.get('/partnership', function(req, res) {
-	res.render('partnership.html'); 
+app.get('/FAQ', function(req, res) {
+	res.render('faq.html'); 
 });
-app.get('/llp',function(req,res){
-	res.render('llp.html')
-})
-app.get('/payment',function(req,res){
-	res.render('payment.html')
-})
-app.get('/plc',function(req,res){
-	res.render('plc.html')
-})
-app.get('/proprietorship',function(req,res){
-	res.render('proprietorship.html')
-})
-app.get('/ie-code',function(req,res){
-	res.render('IE-code.html')
-})
-app.get('/fssai',function(req,res){
-	res.render('fssai.html')
-})
-app.get('/ask',function(req,res){
-	res.render('ask.html')
-})
 
-app.get('/esi',function(req,res){
-	res.render('esi.html')
-})
-app.get('/shop',function(req,res){
-	res.render('shop.html')
-})
-app.get('/msme', function(req, res) {
-	res.render('msme.html'); 
+app.get('/membership', function(req, res) {
+	res.render('membership.html'); 
 });
-app.get('/str', function(req, res) {
-	res.render('str.html'); 
+
+app.get('/Privacy', function(req, res) {
+	res.render('privacy.html'); 
 });
-app.get('/vat', function(req, res) {
-	res.render('vat.html'); 
+app.get('/TermsAndConditions', function(req, res) {
+	res.render('t&c.html'); 
 });
-app.get('/opc', function(req, res) {
-	res.render('opc.html'); 
+
+app.get('/Returns', function(req, res) {
+	res.render('Returns.html'); 
 });
-app.get('/pan', function(req, res) {
-	res.render('pan.html'); 
+
+app.get('/Sitemap', function(req, res) {
+	res.render('Sitemap.html'); 
 });
+
+
 app.post('/subscribe',function(req,res){
 	
 	var subscription = new Subscribe();

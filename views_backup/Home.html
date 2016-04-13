@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amb Classe</title>
+		<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/owl.carousel.css" rel="stylesheet">
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="#" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script src="js/bootstrap.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<!-- responsiveslides -->
+			<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+				    // Slideshow 4
+					$("#slider4").responsiveSlides({
+					auto: true,
+					pager: true,
+					nav: true,
+					speed: 500,
+					namespace: "callbacks",
+					before: function () {
+					$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						$('.events').append("<li>after event fired.</li>");
+						}
+						});
+						});
+			</script>
+		<!-- responsiveslides -->
+		 <script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+					});
+				});
+			</script>
+	</head>
+	<body>
+		<% include ./Header.html %>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"> 
+					<div class="logo text-center">
+							<h2> Amb Classe</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+	<div class="screen-shots">
+		<div class="sreen-gallery-cursual">
+		       <div id="owl-demo" class="owl-carousel">
+	                <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c5.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Karol Bagh</p>
+									<h5 class="s-heading"> </h5>
+								</div>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c3.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Tilak Nagar</p>
+									<h5 class="s-heading"> </h5>
+								</div>
+                               </div>
+	                		</div>
+	                </div>
+	                 <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c6.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Janakpuri</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	               <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c4.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Janakpuri</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	                 <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c1.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Patel Nagar</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	                 <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c2.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Kirti Nagar</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	               <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c3.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Patel Nagar</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	                 <div class="item">
+	                	<div class="item-grid">
+	                		<div class="item-pic">
+	                			<img src="images/c4.jpg" alt="" />
+								<div class="item-text text-center">
+									<p class="s-para">Karol Bagh</p>
+									<h5 class="s-heading"></h5>
+								</div>
+                               </div>
+	                		</div>
+	                	</div>
+	            </div>
+            </div>
+		</div>
+
+		<script src="js/lightbox.js"></script>
+	    <script src="js/owl.carousel.js"></script>
+	    <script>
+		    $(document).ready(function() {
+		      $("#owl-demo").owlCarousel({
+		        items :4,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : false,
+		        navigationText :  false,
+		        pagination : true,
+		      });
+		    });
+	    </script>
+							 	
+		<div class="welcome text-center">
+			<div class="container">
+			    <h2>Welcome To Amb Classe</h2>
+				<p>
+				Amb Classe is the leading manufacturer of readymade and 
+				stylish fashionwear brand. A wide spreading network of retail stores putting on global standards in men's wear. The product highlights are formals, casuals, shirts, t-shirts, trousers, denims, jackets and even woolens followed by many others you require. An extended number of exclusive stores which is version with its approach every single day to desired wants. We offer you a product which is highly upto your expectations and of course with affordable and quality materials. 
+				You will get a variety with unusual content. Its our effort to convince our customers with ultimate consumer. With your presence we are highly obliged. Lifestyle clothing 
+				that each of you can comfortably buy and show off, amb classe is expanding at 
+				a rate unsurpassed by any other in the category.
+				
+				</p>
+			</div>
+		</div>
+		<p>&nbsp; </p>
+		
+ 		<div class="parallax parallax2">
+            <div class="parallax-pattern"></div>
+            <div class="container">  
+				<div class="col-sm-12 col-md-12 col-lg-12 text-center gapt30">
+					<h1 style="font-size: 2.5em;"> We know your hardwork and will never let it idle.</h1>
+					<p style="font-size:1.5em; color:#fff;">
+					Amb Classe started to comfy you in every possible way. Day by day we are presenting for start ups, obviously youth is power! But we are considering a wide range of cool fit options as per your consideration for all builds and preferences. It's our way to make you feel better at every start up you take in.
+					</p>
+					<p><button type="button" class="btn btn-danger btn-lg"> <a href="gallery.html" style="color:#fff;">Explore</a></button></p>
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="cate" class="categories">
+			 <div class="container">
+				<div class="cat-head">
+					<h3>Introducing The Latest Collection</h3>
+				 </div>
+			</div>
+
+		<div class="news" id="blog">
+			<div class="container">
+				<div class="news-head text-center">
+				</div>
+				<div class="news-grids">
+					<div class="col-md-4 news-grid">
+						
+						<a class="mask"><img src="images/c1.jpg" class="img-responsive zoom-img" alt="" /></a>
+						
+					</div>
+					<div class="col-md-4 news-grid">
+						
+						<!--<span>Posted by <a class="admin" href="#">Admin</a>on 24 SEP 2015</span>-->
+						<a class="mask" href="#"><img src="images/c3.jpg" class="img-responsive zoom-img" alt="" /></a>
+					
+					</div>
+					<div class="col-md-4 news-grid">
+				<a class="mask" ><img src="images/c2.jpg" class="img-responsive zoom-img" alt="" /></a>
+				</div>
+					
+					<div class="col-md-4 news-grid">
+					<a class="mask"><img src="images/c4.jpg" class="img-responsive zoom-img" alt="" /></a>
+					</div>
+					<div class="col-md-4 news-grid">
+					<a class="mask" href="single.html"><img src="images/c5.jpg" class="img-responsive zoom-img" alt="" /></a>
+				</div>
+					<div class="col-md-4 news-grid">
+						
+						<a class="mask" ><img src="images/c6.jpg" class="img-responsive zoom-img" alt="" /></a>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+	</div>
+</div>
+		<div class="second-slider">
+			<div class="container">
+			<h3 class="tes text-center">Testimonials</h3>
+				<div  id="top" class="callbacks_container">
+							<ul class="rslides" id="slider4">
+								<li>
+									<div class="sec-slid-info text-center">
+										<img src="images/tes1.jpg" alt="" />
+										<h4 style="background-color:none;">Alissa Turner</h4>
+										<p> good fabric</p>
+									</div>
+								</li>
+								<li>
+									<div class="sec-slid-info text-center">
+										<img src="images/tes2.jpg" alt="" />
+										<h4 style="background-color:none;">Ronnie Toh</h4>
+										<p> Nice Quality</p>
+									</div>
+								</li>
+								<li>
+									<div class="sec-slid-info text-center">
+										<img src="images/tes3.jpg" alt="" />
+										<h4 style="background-color:none;">Singem Middile</h4>
+										<p> Affordable price</p>
+									</div>
+								</li>
+							</ul>
+				</div>
+			</div>
+		</div>
+
+		<% include ./Footer.html %>
+</body>
+</html>

@@ -52,50 +52,11 @@ label{
 	margin:0;
 }
 /*-- header-starts --*/
-.header-top {margin-top: 10px;
-	margin-bottom: 10px;
+.header-top {
 	padding:-2.9em 0 -3.15em;
 	border-bottom: 1px solid #eee;
 	z-index: -1;
     
-}
-
-
-
-/*-- header-starts --*/
-
-.contact-top{
-margin-top: -90px;
-    background: #FBF8F8;
-    border-top: 2px solid #000;
-    padding-left: 44px;
-    box-shadow: 1px 0px 2px 2px rgba(136, 136, 136, 0.41);
-
-}
-
-
-	.gapt20{padding-top: 20px;}
-
-
-.form-control {
-    display: block;
-    width: 127%;
-    height: 32px;
-    border-radius: 0px;
-    padding: 6px 16px;
-    font-size: 14px;
-    line-height: 1.428571;
-    color: #555;
-    /* background-color: #fff; */
-    /* background-image: none; */
-    /* border: 2px solid #0FCCEA; */
-}
-
-.btn-default9{
-	background-color: #0FCCEA;
-    border-radius: 0px;
-    padding: 10px 113px;
-    color: #fff;
 }
 p.location {
 	float:left;
@@ -182,7 +143,7 @@ padding:0;
 
 .owl-carousel .owl-wrapper-outer {
   
-    margin-top:-11px;
+    margin-top: 20px;
 }
 .navbar-default .navbar-nav > li > a{
     text-transform: capitalize;
@@ -252,7 +213,7 @@ nav a:focus {
 	position: absolute;
     top: 13.5%;
     left: 10%;
-    background-color: rgba(255, 255, 255, 0.95);  
+    background-color: rgba(255, 255, 255, 0.77);
     width: 80%;
     height: 73%;
     text-align: center;
@@ -1697,6 +1658,20 @@ a.list-group-item:hover, a.list-group-item:focus {
     font-weight: 300;
 	  color: #fff;
 }
+
+.form-control {
+    display: block;
+    width: 127%;
+    height: 32px;
+    border-radius: 0px;
+    padding: 6px 16px;
+    font-size: 14px;
+    line-height: 1.428571;
+    color: #555;
+    background-color: #fff; 
+     background-image: none;
+     border: 0px;
+}
 .hvr-rectangle-in:before {
   content: "";
   position: absolute;
@@ -2851,3 +2826,21 @@ text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
 }  
+
+
+
+
+.contact-top {
+    box-shadow: 1px 0px 2px 2px rgba(136, 136, 136, 0.41);
+    margin-top: -90px;
+    background: #FBF8F8;
+    border-top: 2px solid #000;
+    padding-left: 44px;
+}
+
+.btn-default9 {
+    background-color: #0FCCEA;
+    border-radius: 0px;
+    padding: 10px 113px;
+    color: #fff;
+}

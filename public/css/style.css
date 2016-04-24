@@ -731,22 +731,22 @@ a.callbacks_nav.callbacks2_nav.next {
 	line-height: 1.8em;
 }
 .sec-slid-info h4 {
-	color:#fff;
+	color: #100D69 !important;
 	margin:0.2em 0 0.5em;
 	font-size:1.2em;
 	letter-spacing:3px;
 }
 .sec-slid-info p{
 	font-size: 1.1em;
-    color: #ffffff;
+    color: #100D69 !important;
     text-align: center;
     line-height: 1.6em;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 h3.tes {
-	color: #fff;
-    font-size: 2.3em;
+	color: #000000;
+    font-size: 36px;
     letter-spacing: 1px;
 	margin-bottom: 0.5em;
 	    padding: 0;
@@ -2024,6 +2024,10 @@ ul.contact_info span {
 		width: 33.333%;
 		float: left;
 	}
+	.col-md-3.footer-grid {
+		width: 33.333%;
+		float: left;
+	}
 	.copyrights {
 		float: left;
 	}
@@ -2042,7 +2046,7 @@ ul.contact_info span {
 	}
 	.sec-slid-info p {
 		font-size: 1em;
-		width: 85%;
+		width: 100%;
 	}
 	.sec-slid-info h4 {
 		font-size: 2em;
@@ -2781,7 +2785,7 @@ background-color:rgba(51, 130, 201, 0.51); padding-bottom:10px; padding-top:10px
                                                 }                                               
                                                 
 .parallax h1                                    {   text-align:center; font-size:36px;   font-weight:normal; color:#fff; margin-bottom:50px; 
-text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+
                                                 }                                       
                                                 
 .parallax p                                     {   margin-top:40px; 

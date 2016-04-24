@@ -688,7 +688,7 @@ a.callbacks_nav.callbacks2_nav.next {
 	top: 115%;
 }
 .second-slider{
-	    background: rgba(51, 130, 201, 0.51);
+	    background: rgb(53, 136, 212);
 
 	padding:1em 0 3.5em;
 	position:relative;
@@ -2812,7 +2812,7 @@ text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
 .parallax1                                      {   background-image:url(../images/parallax1.jpg);
                                                 }
                                                 
-.parallax2                                      {   background-image:url(../images/parallax2.jpg); 
+.parallax2                                      {   background-image:url(../images/old.jpg); 
                                                 }
                                                 
 .parallax3                                      {   background-image:url(../images/parallax1.jpg); opacity:0.9;

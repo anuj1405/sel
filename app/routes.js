@@ -14,37 +14,48 @@ var crypto = require('crypto');
     
 
 app.get('/', function(req, res) {
-	res.render('Home.html'); 
+	res.render('home.html'); 
 });
-app.get('/gallery', function(req, res) {
-	res.render('gallery.html'); 
+app.get('/custom_tshirts', function(req, res) {
+	res.render('custom_tshirts.html'); 
 });
 app.get('/contact', function(req, res) {
-	res.render('contact.html'); 
+	res.render('contact_us.html'); 
 });
-app.get('/FAQ', function(req, res) {
+app.get('/faq', function(req, res) {
 	res.render('faq.html'); 
 });
 
-app.get('/membership', function(req, res) {
-	res.render('membership.html'); 
+app.get('/club', function(req, res) {
+	res.render('club.html'); 
 });
 
-app.get('/Privacy', function(req, res) {
+app.get('/ambclassequestion',function(req,res){
+	res.render('club_quiz.html');
+})
+
+app.get('/privacy', function(req, res) {
 	res.render('privacy.html'); 
 });
-app.get('/TermsAndConditions', function(req, res) {
-	res.render('t&c.html'); 
+app.get('/termsandconditions', function(req, res) {
+	res.render('termsandconditions.html'); 
 });
 
-app.get('/Returns', function(req, res) {
-	res.render('Returns.html'); 
+app.get('/returns', function(req, res) {
+	res.render('returns.html'); 
 });
 
-app.get('/Sitemap', function(req, res) {
-	res.render('Sitemap.html'); 
+app.get('/affiliates', function(req, res) {
+	res.render('affiliates.html'); 
 });
 
+app.get('/sitemap', function(req, res) {
+	res.render('sitemap.html'); 
+});
+
+app.use(function(req, res) {
+    res.redirect('/')
+});
 
 app.post('/subscribe',function(req,res){
 	

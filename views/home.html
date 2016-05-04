@@ -3,14 +3,14 @@
 	<head>
 		<title>Amb Classe</title>
 		<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
-		<link href="ambclasse_css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<link href="ambclasse_css/owl.carousel.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/owl.carousel.css" rel="stylesheet">
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/modernizr.custom.js"></script>
 
-		<link href="ambclasse_css/style.css" rel="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" href="ambclasse_css/lightbox.css" type="text/css" media="all" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all" />
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -62,10 +62,40 @@
 			</div>
 		</div>
 	
-	  
+	  	<div class="container">
+	  			<div class="banner">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+       <img src="images/ac1.jpg" alt="" style="width:122%;">
+   
+      </div>
+        
+    <div class="item">  
+       <img src="images/ac2.jpg" alt=""  style="width:122%;">
+      
+    </div>
+    <div class="item">
+       <img src="images/ac3.jpg" alt=""  style="width:122%;">
+      
+    </div>  
+    
+    </div>
+    
+   </div>
+</div>
+</div>
 	  
 	
-	<div class="screen-shots">  
+	<!--<div class="screen-shots">  
 		<div class="sreen-gallery-cursual">
 		       <div id="owl-demo" class="owl-carousel">
 	                <div class="item">
@@ -158,11 +188,11 @@
 	                	</div>
 	            </div>
             </div>
-		</div>
+		</div>-->
 
 		<script src="js/lightbox.js"></script>
-	    <script src="js/owl.carousel.js"></script>
-	    <script>
+	  	  <!--   <script src="js/owl.carousel.js"></script>
+ <script>
 		    $(document).ready(function() {
 		      $("#owl-demo").owlCarousel({
 		        items :4,
@@ -173,7 +203,7 @@
 		        pagination : true,
 		      });
 		    });
-	    </script>
+	    </script>-->
 							 	
 		<div class="welcome text-center"  style="padding-bottom:80px;">
 			<div class="container">
@@ -309,21 +339,27 @@
 									<div class="sec-slid-info text-center">
 										<img src="images/tes1.jpg" alt="" />
 										<h4 style="background-color:none;">Alissa Turner</h4>
-										<p>I just got my first order and I have one word WOW!!!! Love, Love, Love these cloths!! I had my doubts before I ordered because most sites plus size cloths are too small and I'm usually disappointment, but not this time!! The shipping was also really fast1 only took about 9 days to get to me. Love it!! I'll be back to buy more. For Sure!</p>
+										<p>
+										“I happened to try out Amb Classe for the first time in a store in Delhi, and have been using their stuff
+ever since. Comfort, fit and durability of fabric at affordable price makes it completely worth it”</p>
 									</div>
 								</li>  
 								<li>
 									<div class="sec-slid-info text-center">
 										<img src="images/tes2.jpg" alt="" />
 										<h4 style="background-color:none;">Ronnie Toh</h4>
-										<p> This is my very first order through site, and I am totally and completely satisfied! The fit is great and so are the prices. I will definitely return again and again...</p>
+										<p> “ I interacted with team Amb classe for a bulk order of custom tees a couple of months ago. I was
+pleasantly surprised at the quality of fabric and apparel fit. The orders were serviced professionally.
+Overall a very good experience.”</p>
 									</div>
 								</li>
 	  							<li>
 									<div class="sec-slid-info text-center">
 										<img src="images/tes3.jpg" alt="" />
 										<h4 style="background-color:none;">Singem Middile</h4>
-										<p>Just wanted to say that i am very pleased with this web site. Yours Clothing thank you so much for offering wonderful fun flirty clothing for us Plus size girls, for once there are beautiful clothes that fit us girls just right! This was my first purchase from this web site and let me tell you i have had the best experience ever!</p>
+										<p>“Finding newer prints and cuts for male clothing is tough. Very impressed with the collection that Amb
+Classe offers. Soothing colours with different prints and style. Spoke to a store representative who told
+me that their entire collection has been designed by young designers”</p>
 									</div>
 								</li>
 							</ul>
@@ -333,5 +369,4 @@
 
 		<% include ./footer.html %>
 </body>
-
 </html>

@@ -2193,7 +2193,7 @@ ul.contact_info span {
 		padding: 5em 0 0 0;
 	}
 	.welcome h2 {
-		font-size: 3.4em;
+		font-size: 1.8em;
 	}
 	.cat-head h3, .news-head h3, h3.tes, .why_choose_us h3, .team h3 {
 		font-size: 3.2em;
@@ -2646,6 +2646,9 @@ ul.contact_info span {
 		left: 37.5%;
 	}
 }
+
+
+
 /*tommy*********************************/
 
 .eSpot .textElement .justifyCenter, .eSpot .chronicleShortDesc .justifyCenter {
@@ -2848,3 +2851,19 @@ background-color:rgba(51, 130, 201, 0.51); padding-bottom:10px; padding-top:10px
     padding: 10px 113px;
     color: #fff;
 }
+.top-main{    background-color: #28c891;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 9px;
+    padding-bottom: 5px;}
+
+  .ambkeys{
+    	background-color: #f4f4f4;
+    	color:#333333;
+    }  
+
+    .btn-danger2{
+    	border-radius: 0px;
+    	 background-color: #28c891;
+    	 font-weight: bold;
+    }

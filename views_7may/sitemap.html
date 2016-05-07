@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amb Classe</title>
+
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+
+
+
+<link href="ambclasse_css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="ambclasse_css/owl.carousel.css" rel="stylesheet">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<!-- Custom Theme files -->
+<link href="ambclasse_css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="ambclasse_css/lightbox.css" type="text/css" media="all" />
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="#" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"></script>
+
+		<!-- //for bootstrap working -->
+<!-- web fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- responsiveslides -->
+	<script src="js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+		    // Slideshow 4
+			$("#slider4").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			$('.events').append("<li ><a href="  ">before event fired.</li>");
+				},
+				after: function () {
+				$('.events').append("<li ><a href="  ">after event fired.</li>");
+				}
+				});
+				});
+	</script>
+<!-- responsiveslides -->
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- header-section-starts -->	
+		<% include ./header.html %>
+
+		<!-- //news -->
+	 
+<div class="container">
+<div class="col-sm-12" >
+
+<h2 class="text-center gapt30"> SITE MAP </h2>
+<hr style="border:1px solid #ccc;">
+<div class="col-sm-4">
+<h3> EXPLORE </h3></div>
+<div class= "col-sm-4"> </div>
+<div class= "col-sm-4">
+<div class="social-icons footer-social-icons">
+				<a href="https://www.facebook.com/ambclasse/?fref=ts"><i class="facebook"></i></a>
+				<a href="#"><i class="twitter"></i></a>
+				<a href="#"><i class="google-plus"></i></a>&nbsp;
+				&nbsp;<p>Mail Us:<a href="mailto:mona.malik812@gmail.com.com">ambclasse.enterprises@gmail.com</a>
+			</div>
+</div>
+
+<div class="col-sm-4 col-md-4 col-lg-4">
+<ul class="map">
+<li ><a href="http://ambclasse.com/ ">About us </li>
+<li ><a href="http://blog.ambclasse.com/  "> Blog</li>
+<li ><a href="http://ambclasse.com/contact  "> Contact us </li>
+<li ><a href=" http://ambclasse.com/faq.html ">Faq's </li>
+</ul>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+<ul class="map">
+
+<li ><a href="http://ambclasse.com/  "> Home</li>
+<li ><a href=" http://ambclasse.com/privacy.html "> Privacy policy </li>
+<li ><a href=" http://ambclasse.com/returns.html "> Order & Returns</li>
+</ul>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4">
+<ul class="map">
+<li ><a href="http://ambclasse.com/membership  ">The AmbClasse Club </li>
+<li ><a href=" http://ambclasse.com/t&c.html ">Terms and condition </li>
+<li ><a href="http://ambclasse.com/gallery  "> Wear Your Brand</li>
+
+</ul>
+</div>
+
+<div class="gapb50"> &nbsp; </div>
+</div>
+</div>  
+	
+		<!-- footer-section -->
+	<% include ./footer.html %>
+	
+	
+	
+	<!-- //footer-section -->
+<!----> 
+
+</body>
+</html>

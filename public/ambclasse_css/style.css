@@ -9,6 +9,40 @@
 	padding-top: 98px;  
 
 }
+.contact-top {
+    box-shadow: 1px 0px 2px 2px rgba(136, 136, 136, 0.41);
+    margin-top: -27px;
+    background: #FBF8F8;
+    border-top: 2px solid #000;
+    padding-left: 44px;
+}
+
+.btn-default9 {
+    background-color: #0FCCEA;
+    border-radius: 0px;
+    padding: 10px 113px;
+    color: #fff;
+}
+
+.top-main{    
+	background-color: #28c891;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 9px;
+    padding-bottom: 5px;
+}
+
+.ambkeys{
+    background-color: #f4f4f4;
+    color:#333333;
+}  
+
+.btn-danger2
+{
+	border-radius: 0px;
+	background-color: #28c891;
+	font-weight: bold;
+}
 
 .carousel-caption {
     position: absolute;
@@ -225,13 +259,13 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image:url(../images/ambtees1.jpg); 
+  background-image:url(../../images/ambtees1.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image:url( ../images/ambtees2.jpg);
+  background-image:url(../ ../images/ambtees2.jpg);
 }  
 .fade-carousel .slides .slide-3 {
-  background-image:url(../images/crop.jpg);
+  background-image:url(../../images/crop.jpg);
 }
 
 /********************************/
@@ -2507,7 +2541,7 @@ ul.contact_info span {
 		padding: 5em 0 0 0;
 	}
 	.welcome h2 {
-		font-size: 3.4em;
+		font-size: 1.4em;
 	}
 	.cat-head h3, .news-head h3, h3.tes, .why_choose_us h3, .team h3 {
 		font-size: 3.2em;
@@ -3145,20 +3179,3 @@ text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
 }  
 
-
-
-
-.contact-top {
-    box-shadow: 1px 0px 2px 2px rgba(136, 136, 136, 0.41);
-    margin-top: -27px;
-    background: #FBF8F8;
-    border-top: 2px solid #000;
-    padding-left: 44px;
-}
-
-.btn-default9 {
-    background-color: #0FCCEA;
-    border-radius: 0px;
-    padding: 10px 113px;
-    color: #fff;
-}
